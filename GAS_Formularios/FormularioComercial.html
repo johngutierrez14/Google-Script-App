@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container mt-3">
+
+    <form class="needs-validation" novalidate>
+
+      <div class="row">
+        <label for="selectContrato" class="form-label">Seleccione contrato a evaluar</label>
+        <input class="form-control" input="text" id="selectContrato" placeholder="Escribe para buscar..." required>
+      </div>
+
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="comercialTiempo1" class="form-label">Tiempo de entrega</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaTiempoEntrega"
+                                id="comercialTiempo1" value="1" required>
+            <label class="form-check-label" for="comercialTiempo1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaTiempoEntrega"
+                                id="comercialTiempo2" value="0" required>
+            <label class="form-check-label" for="comercialTiempo2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaTiempoEntrega"
+                                id="comercialTiempo3" value="NA" required>
+            <label class="form-check-label" for="comercialTiempo3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="comercialCantidad1" class="form-label">Cantidad</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaCantidad"
+                                id="comercialCantidad1" value="1" required>
+            <label class="form-check-label" for="comercialCantidad1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaCantidad"
+                                id="comercialCantidad2" value="0" required>
+            <label class="form-check-label" for="comercialCantidad2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaCantidad"
+                                id="comercialCantidad3" value="NA" required>
+            <label class="form-check-label" for="comercialCantidad3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="comercialDestino1" class="form-label">Destino</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaDestino"
+                                id="comercialDestino1" value="1" required>
+            <label class="form-check-label" for="comercialDestino1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaDestino"
+                                id="comercialDestino2" value="0" required>
+            <label class="form-check-label" for="comercialDestino2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaDestino"
+                                id="comercialDestino3" value="NA" required>
+            <label class="form-check-label" for="comercialDestino3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="comercialMarca1" class="form-label">Marca</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaMarca"
+                                id="comercialMarca1" value="1" required>
+            <label class="form-check-label" for="comercialMarca1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaMarca"
+                                id="comercialMarca2" value="0" required>
+            <label class="form-check-label" for="comercialMarca2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaMarca"
+                                id="comercialMarca3" value="NA" required>
+            <label class="form-check-label" for="comercialMarca3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="comercialPrecio1" class="form-label">Precio</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaPrecio"
+                                id="comercialPrecio1" value="1" required>
+            <label class="form-check-label" for="comercialPrecio1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaPrecio"
+                                id="comercialPrecio2" value="0" required>
+            <label class="form-check-label" for="comercialPrecio2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaPrecio"
+                                id="comercialPrecio3" value="NA" required>
+            <label class="form-check-label" for="comercialPrecio3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ">
+        <label for="selectObservaciones" class="form-label">Observaciones</label>
+        <input class="form-control" input="text" id="selectObservaciones" placeholder="Observación...">
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" onclick="submitComercial()">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+  </script>
+
+  <script>
+    function submitComercial(){
+        let select = document.getElementById('selectContrato').value;
+        let area = 'Comercial';
+        let contrato = 'Comercial' + select;
+        let pregunta1=document.querySelector('input[name="preguntaTiempoEntrega"]:checked').value;
+        let pregunta2=document.querySelector('input[name="preguntaCantidad"]:checked').value;
+        let pregunta3=document.querySelector('input[name="preguntaDestino"]:checked').value;
+        let pregunta4=document.querySelector('input[name="preguntaMarca"]:checked').value;
+        let pregunta5=document.querySelector('input[name="preguntaPrecio"]:checked').value;
+        let final = Number(pregunta1)*Number(pregunta2)*Number(pregunta3)*Number(pregunta4)*Number(pregunta5);
+        if (final > 0){
+          final = 1;
+        } else {
+          final = -1;
+        }
+        let observacion = document.getElementById('selectObservaciones').value;
+      
+        google.script.run.appenComercial(area, contrato, final, pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, observacion);
+    }
+        
+  </script>
+</body>
+
+</html>

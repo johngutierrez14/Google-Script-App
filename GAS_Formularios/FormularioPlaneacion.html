@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container mt-3">
+
+    <form class="needs-validation" novalidate>
+
+      <div class="row">
+        <label for="selectContrato" class="form-label">Seleccione contrato a evaluar</label>
+        <input class="form-control" input="text" id="selectContrato" placeholder="Escribe para buscar...">
+      </div>
+
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="planeacionCantidad1" class="form-label">Cantidad</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaCantidad"
+                                id="planeacionCantidad1" value="1" required>
+            <label class="form-check-label" for="planeacionCantidad1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaCantidad"
+                                id="planeacionCantidad2" value="0" required>
+            <label class="form-check-label" for="planeacionCantidad2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaCantidad"
+                                id="planeacionCantidad3" value="NA" required>
+            <label class="form-check-label" for="planeacionCantidad3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="planeacionPrecios1" class="form-label">Precios</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaPrecios"
+                                id="planeacionPrecios1" value="1" required>
+            <label class="form-check-label" for="planeacionPrecios1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaPrecios"
+                                id="planeacionPrecios2" value="0" required>
+            <label class="form-check-label" for="planeacionPrecios2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaPrecios"
+                                id="planeacionPrecios3" value="NA" required>
+            <label class="form-check-label" for="planeacionPrecios3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="planeacionOrigen1" class="form-label">Origen</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaOrigen"
+                                id="planeacionOrigen1" value="1" required>
+            <label class="form-check-label" for="planeacionOrigen1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaOrigen"
+                                id="planeacionOrigen2" value="0" required>
+            <label class="form-check-label" for="planeacionOrigen2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaOrigen"
+                                id="planeacionOrigen3" value="NA" required>
+            <label class="form-check-label" for="planeacionOrigen3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="planeacionDestino1" class="form-label">Destino</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaDestino"
+                                id="planeacionDestino1" value="1" required>
+            <label class="form-check-label" for="planeacionDestino1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaDestino"
+                                id="planeacionDestino2" value="0" required>
+            <label class="form-check-label" for="planeacionDestino2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaDestino"
+                                id="planeacionDestino3" value="NA" required>
+            <label class="form-check-label" for="planeacionDestino3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <label for="planeacionMercancias1" class="form-label">Mercancías</label>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaMercancias"
+                                id="planeacionMercancias1" value="1" required>
+            <label class="form-check-label" for="planeacionMercancias1">Aprobado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaMercancias"
+                                id="planeacionMercancias2" value="0" required>
+            <label class="form-check-label" for="planeacionMercancias2">Rechazado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="preguntaMercancias"
+                                id="planeacionMercancias3" value="NA" required>
+            <label class="form-check-label" for="planeacionMercancias3">No aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="selectObservaciones" class="form-label">Observaciones</label>
+        <input class="form-control" input="text" id="selectObservaciones" placeholder="Observación...">
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" onclick="submitPlaneacion()">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+  </script>
+
+  <script>
+    function submitPlaneacion(){
+        let select = document.getElementById('selectContrato').value;
+        let area = 'Planeación';
+        let contrato = 'Planeación' + select;
+        let pregunta1=document.querySelector('input[name="preguntaCantidad"]:checked').value;
+        let pregunta2=document.querySelector('input[name="preguntaPrecios"]:checked').value;
+        let pregunta3=document.querySelector('input[name="preguntaOrigen"]:checked').value;
+        let pregunta4=document.querySelector('input[name="preguntaDestino"]:checked').value;
+        let pregunta5=document.querySelector('input[name="preguntaMercancias"]:checked').value;
+        let final = Number(pregunta1)*Number(pregunta2)*Number(pregunta3)*Number(pregunta4)*Number(pregunta5);
+        if (final > 0){
+          final = 1;
+        } else {
+          final = -1;
+        }
+        let observacion = document.getElementById('selectObservaciones').value;
+       
+      
+        google.script.run.appenPlaneacion(area, contrato, final, pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, observacion);
+    }
+        
+  </script>
+</body>
+
+</html>
